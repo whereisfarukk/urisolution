@@ -1,0 +1,61 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+  
+    char c1[]="vertebrado",c2[]="invertebrado",c11[]="ave",c12[]="mamifero",c21[]="inseto",c22[]="anelideo",c111[]="carnivoro",c112[]="onivoro",c121[]="onivoro",c122[]="herbivoro",c211[]="hematofago",c212[]="herbivoro",c221[]="hematofago",c222[]="onivoro",a[15],b[15],c[15];
+    gets(a);
+    gets(b);
+    gets(c);
+    if(strcmp(a,c1)==0)
+    {
+        if(strcmp(b,c11)==0)
+        {
+            if(strcmp(c,c111)==0)
+            {
+                printf("aguia\n");
+            }
+            else
+            {
+              printf("pomba\n"); 
+            }
+        }
+        else 
+        {
+            if(strcmp(c,c121)==0)
+            {
+                printf("homem\n");
+            }
+            else
+            {
+                printf("vaca\n");
+            }
+        }
+    }
+   if(strcmp(a,c2)==0)
+    {
+        if(strcmp(b,c21)==0)
+        {
+            if(strcmp(c,c211)==0)
+            {
+                printf("pulga\n");
+            }
+            else
+            {
+              printf("lagarta\n"); 
+            }
+        }
+        else 
+        {
+            if(strcmp(c,c221)==0)
+            {
+                printf("sanguessuga\n");
+            }
+            else
+            {
+                printf("minhoca\n");
+            }
+        }
+    } 
+    return 0;
+}
